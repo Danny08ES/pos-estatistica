@@ -1,0 +1,101 @@
+/* Corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: #333;
+}
+
+/* Contêiner do Jogo */
+#game-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    max-width: 90%;
+}
+
+/* Seção do Gatinho */
+#cat-section {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#dancing-cat {
+    width: 100px;
+    animation: dance 0.8s infinite alternate; /* Animação de dança */
+}
+
+/* Barra de Vida */
+#hp-bar-container {
+    width: 100px;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 8px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+#hp-bar {
+    width: 100%;
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 0.3s ease;
+}
+
+/* Mensagens Acima do Gatinho */
+#cat-message {
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    text-align: center;
+}
+
+#cat-message p {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Animação de dança */
+@keyframes dance {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+/* Mensagens de erro e sucesso */
+.success {
+    color: #5cb85c;
+    font-weight: bold;
+}
+
+.error {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #0072ff;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover do botão */
+button:hover {
+    background-color: #0056b3;
+}

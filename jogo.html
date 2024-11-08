@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Estatística</title>
+    <link rel="stylesheet" href="stylegame.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Jogo de Estatística</h1>
+        
+        <!-- Seção do Gatinho com Barra de Vida -->
+        <div id="cat-section">
+            <div id="cat-message"> <!-- Mensagem de acerto/erro -->
+                <p id="message-text"></p>
+            </div>
+            <img src="gatinho.gif" id="dancing-cat" alt="Gatinho Dançando">
+            <div id="hp-bar-container">
+                <div id="hp-bar"></div>
+            </div>
+        </div>
+
+        <!-- Caixa de Pergunta -->
+        <div id="game-info">
+            <p>Vidas: <span id="lives">3</span></p>
+            <p>Fase: <span id="stage">1</span> de 5</p>
+        </div>
+        <div id="question-section">
+            <p id="question-text">Pergunta aparecerá aqui</p>
+            <input type="text" id="answer" placeholder="Sua resposta">
+            <button onclick="submitAnswer()">Responder</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    
+    <script src="scriptgame.js"></script>
+</body>
+</html>
